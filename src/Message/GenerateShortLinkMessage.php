@@ -6,5 +6,6 @@ readonly class GenerateShortLinkMessage
 {
     public function __construct(
         public string $shortLinkId
-    ) {}
+    ) {
+    }
 }

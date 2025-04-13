@@ -51,7 +51,10 @@ class ResponseSubscriber implements EventSubscriberInterface
     {
         $contentType = $response->headers->get('content-type');
         return !$response->headers->has('content-type') || (
-            $contentType && str_contains($contentType, 'application/json'
-            ));
+            $contentType && str_contains(
+                $contentType,
+                'application/json'
+            )
+        );
     }
 }

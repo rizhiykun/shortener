@@ -14,8 +14,7 @@ readonly class GenerateShortLinkHandler
     public function __construct(
         private ShortUrlRepository $repository,
         private ShortLinkGenerator $generator,
-    )
-    {
+    ) {
     }
 
     public function __invoke(GenerateShortLinkMessage $message): void
@@ -27,7 +26,9 @@ readonly class GenerateShortLinkHandler
 
         do {
             $code = $this->generator->generateShortLink();
-        } while ($this->repository->findOneBy(['shortCode' => $code]) !== null);
+        } while ($this->repository->findOneBy([
+            'shortCode' => $code,
+        ]) !== null);
         $shortUrl
             ->setShortCode($code)
             ->setStatus(StatusType::READY);

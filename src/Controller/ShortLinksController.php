@@ -7,20 +7,19 @@ use App\DTO\Responses\CreateShortLinkResponse;
 use App\Service\AppSerializer;
 use App\Service\ShortLinkService;
 use Nelmio\ApiDocBundle\Attribute\Model;
+use OpenApi\Attributes as OA;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapQueryString;
 use Symfony\Component\PropertyInfo\Type;
 use Symfony\Component\Routing\Attribute\Route;
-use OpenApi\Attributes as OA;
 
 final class ShortLinksController extends BaseController
 {
     public function __construct(
         AppSerializer $appSerializer,
         private readonly ShortLinkService $shortLinkService
-    )
-    {
+    ) {
         parent::__construct($appSerializer);
     }
 
@@ -43,8 +42,7 @@ final class ShortLinksController extends BaseController
     public function createShortLink(
         #[MapQueryString]
         CreateShortLinkRequest $request
-    ): Response
-    {
+    ): Response {
         return $this->appJson($this->shortLinkService->process($request->original_url));
     }
 }

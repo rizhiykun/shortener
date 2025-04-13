@@ -15,5 +15,6 @@ final readonly class CreateShortLinkRequest
         )]
         #[Assert\Url(message: 'Поле original_url должно быть ссылкой')]
         public string $original_url
-        ){}
+    ) {
+    }
 }

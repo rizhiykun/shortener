@@ -12,7 +12,8 @@ readonly class ShortLinkLockFactory
     public function __construct(
         private LockFactory $lockFactory,
         private float $ttl
-    ) {}
+    ) {
+    }
 
     public function create(string $originalUrl): LockInterface
     {

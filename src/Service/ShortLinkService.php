@@ -18,8 +18,7 @@ class ShortLinkService extends BaseService
         private readonly ShortLinkLockFactory $lockFactory,
         private readonly ShortLinkFactory     $shortLinkFactory,
         private readonly string               $baseUrl
-    )
-    {
+    ) {
     }
 
     public function process(string $originalUrl): CreateShortLinkResponse
@@ -31,7 +30,9 @@ class ShortLinkService extends BaseService
         }
 
         try {
-            $shortUrl = $this->repository->findOneBy(['originalUrl' => $originalUrl]);
+            $shortUrl = $this->repository->findOneBy([
+                'originalUrl' => $originalUrl,
+            ]);
 
             if ($shortUrl && $shortUrl->getStatus() === StatusType::READY) {
                 return new CreateShortLinkResponse(StatusType::READY, $this->baseUrl . $shortUrl->getShortCode());
