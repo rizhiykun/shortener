@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9340b7a-ed57-40b7-9a7a-23537ae3ec4f" name="Changes" comment="">
+    <list default="true" id="a9340b7a-ed57-40b7-9a7a-23537ae3ec4f" name="Changes" comment="little fix">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.dev" beforeDir="false" afterPath="$PROJECT_DIR$/.env.dev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_4_13_25__10_02AM.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/redis-manager-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/redis-manager-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shortener.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shortener.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ShortLinksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ShortLinksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/UpdateTimestampsTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/UpdateTimestampsTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/UuidIdTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/UuidIdTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,12 +210,16 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Factory" />
     </key>
   </component>
   <component name="RunManager">
@@ -251,11 +244,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744537334880</updated>
-      <workItem from="1744537338082" duration="782000" />
+      <workItem from="1744537338082" duration="12828000" />
     </task>
+    <task id="LOCAL-00001" summary="some little fixes">
+      <option name="closed" value="true" />
+      <created>1744538452457</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744538452457</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add tests">
+      <option name="closed" value="true" />
+      <created>1744563345002</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744563345002</updated>
+    </task>
+    <task id="LOCAL-00003" summary="little fix">
+      <option name="closed" value="true" />
+      <created>1744564714712</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744564714712</updated>
+    </task>
+    <task id="LOCAL-00004" summary="little fix">
+      <option name="closed" value="true" />
+      <created>1744568389399</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744568389399</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some little fixes" />
+    <MESSAGE value="add tests" />
+    <MESSAGE value="little fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="little fix" />
   </component>
 </project>
