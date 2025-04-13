@@ -6,8 +6,10 @@ class ShortLinkGenerator
 {
     private const ALPHABET = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
-    public function generateShortLink(int $length = 5): string
+    public function generateShortLink(?int $length = null): string
     {
+        $length ??= random_int(4, 8);
+
         $result = '';
         $maxIndex = strlen(self::ALPHABET) - 1;
 

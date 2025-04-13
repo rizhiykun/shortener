@@ -19,12 +19,4 @@ class CreateShortLinkResponse
         public string $status,
         public ?string $shortUrl = null
     ) {}
-
-    public function toArray(): array
-    {
-        return [
-            'status' => $this->status,
-            'shortUrl' => $this->shortUrl
-        ];
-    }
 }
