@@ -5,7 +5,7 @@ namespace App\Lock;
 use Symfony\Component\Lock\LockFactory;
 use Symfony\Component\Lock\LockInterface;
 
-readonly class ShortLinkLockFactory
+class ShortLinkLockFactory
 {
     public const KEY = 'short_url_';
 
