@@ -10,7 +10,7 @@ use App\Message\GenerateShortLinkMessage;
 use App\Repository\ShortUrlRepository;
 use Symfony\Component\Messenger\MessageBusInterface;
 
-class ShortLinkService extends BaseService
+class ShortLinkService
 {
     public function __construct(
         private readonly ShortUrlRepository   $repository,
