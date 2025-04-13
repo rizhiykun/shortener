@@ -18,7 +18,6 @@ abstract class BaseController extends AbstractController
         mixed $data,
         int   $status = Response::HTTP_OK,
         array $headers = [],
-        array $groups = [],
         array $context = [],
     ): Response {
         return new Response(

@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace App\Traits;
 
-use App\Enum\GroupsType;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Uid\Uuid;
 use Symfony\Component\Uid\UuidV7;
 
@@ -16,7 +14,6 @@ trait UuidIdTrait
     #[ORM\Column(type: 'uuid', unique: true)]
     #[ORM\GeneratedValue(strategy: 'CUSTOM')]
     #[ORM\CustomIdGenerator(class: 'doctrine.uuid_generator')]
-    #[Groups([GroupsType::BASE_FIELD])]
     private $id;
 
     /** @psalm-suppress PossiblyUnusedMethod */

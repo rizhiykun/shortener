@@ -35,7 +35,7 @@ class ShortLinkService extends BaseService
             ]);
 
             if ($shortUrl && $shortUrl->getStatus() === StatusType::READY) {
-                return new CreateShortLinkResponse(StatusType::READY, $this->baseUrl . $shortUrl->getShortCode());
+                return new CreateShortLinkResponse(StatusType::READY, $this->baseUrl . '/' . $shortUrl->getShortCode());
             }
 
             if (!$shortUrl) {

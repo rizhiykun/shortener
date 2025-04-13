@@ -38,7 +38,7 @@ final class ShortLinksController extends BaseController
             ]
         )
     )]
-    #[OA\QueryParameter(name: 'originalUrl', description: 'оригинальный URL', required: true)]
+    #[OA\QueryParameter(name: 'original_url', description: 'оригинальный URL', required: true)]
     public function createShortLink(
         #[MapQueryString]
         CreateShortLinkRequest $request
