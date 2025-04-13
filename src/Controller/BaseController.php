@@ -21,7 +21,7 @@ abstract class BaseController extends AbstractController
         array $context = [],
     ): Response {
         return new Response(
-            $this->appSerializer->serialize($data, 'json', $context), // убрали groups
+            $this->appSerializer->serialize($data, 'json', $context),
             $status,
             array_merge($headers, [
                 'content-type' => 'application/json',

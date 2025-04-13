@@ -9,9 +9,11 @@
     errorBaseline="psalm.baseline.xml"
 >
     <issueHandlers>
-        <UnusedClass severity="suppress"/>
-        <PossiblyUnusedMethod severity="suppress"/>
-        <UnusedClass severity="suppress"/>
+        <UnusedClass errorLevel="suppress"/>
+        <PossiblyUnusedMethod errorLevel="suppress" />
+        <PossiblyNullArgument errorLevel="suppress" />
+        <PossiblyUnusedParam errorLevel="suppress" />
+        <UnusedBaselineEntry errorLevel="suppress" />
     </issueHandlers>
     <projectFiles>
         <directory name="src" />

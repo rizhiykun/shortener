@@ -13,7 +13,6 @@ final class ShortLinksControllerTest extends WebTestCase
     {
         parent::setUp();
 
-        // Автоматическое создание базы данных и миграций перед тестами
         $command = 'php bin/console doctrine:database:create --if-not-exists --env=test';
         exec($command);
 

@@ -144,7 +144,6 @@ class ShortLinkServiceTest extends TestCase
             ->method('dispatch')
             ->with($expectedMessage)
             ->willReturnCallback(function ($message) {
-                // Just return a real Envelope instead of trying to mock it
                 return new Envelope($message);
             });
 

@@ -57,7 +57,6 @@ class ShortLinkGeneratorTest extends TestCase
             $results[] = $this->generator->generateShortLink(8);
         }
 
-        // Very basic randomness check - all generated strings should be different
         $this->assertEquals(count($results), count(array_unique($results)));
     }
 }

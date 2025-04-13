@@ -42,7 +42,7 @@ class ShortLinkService
                 $shortUrl = $this->shortLinkFactory->create($originalUrl);
                 $this->repository->save($shortUrl);
 
-                $this->bus->dispatch(new GenerateShortLinkMessage($shortUrl->getId()));
+                $this->bus->dispatch(new GenerateShortLinkMessage($shortUrl->getId()?->toRfc4122()));
             }
 
             return new CreateShortLinkResponse(StatusType::GENERATING);
