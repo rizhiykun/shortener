@@ -50,9 +50,8 @@ class ResponseSubscriber implements EventSubscriberInterface
     private function shouldSerialize(Response $response): bool
     {
         $contentType = $response->headers->get('content-type');
-        return !$response->headers->has('content-type') || ($contentType && strpos(
-            $contentType,
-            'application/json'
-        ) !== false);
+        return !$response->headers->has('content-type') || (
+            $contentType && str_contains($contentType, 'application/json'
+            ));
     }
 }

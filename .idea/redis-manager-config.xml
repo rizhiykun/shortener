@@ -6,7 +6,6 @@
       <RedisServerNode>
         <option name="auth" value="" />
         <option name="comment" value="" />
-        <option name="connect" value="true" />
         <option name="host" value="172.19.0.3" />
         <option name="id" value="4" />
         <option name="name" value="123" />
@@ -28,7 +27,6 @@
         <RedisServerNode>
           <option name="auth" value="" />
           <option name="comment" value="" />
-          <option name="connect" value="true" />
           <option name="host" value="172.19.0.3" />
           <option name="id" value="4" />
           <option name="name" value="123" />
@@ -54,7 +52,6 @@
             <RedisServerNode>
               <option name="auth" value="" />
               <option name="comment" value="" />
-              <option name="connect" value="true" />
               <option name="host" value="172.19.0.3" />
               <option name="id" value="4" />
               <option name="name" value="123" />

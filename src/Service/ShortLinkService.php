@@ -28,7 +28,6 @@ class ShortLinkService extends BaseService
 
         if (!$lock->acquire()) {
             return new CreateShortLinkResponse(StatusType::GENERATING);
-            //return ['status' => StatusType::GENERATING];
         }
 
         try {
@@ -36,7 +35,6 @@ class ShortLinkService extends BaseService
 
             if ($shortUrl && $shortUrl->getStatus() === StatusType::READY) {
                 return new CreateShortLinkResponse(StatusType::READY, $this->baseUrl . $shortUrl->getShortCode());
-                //return ['status' => StatusType::READY, 'shortUrl' => $this->baseUrl .'/'. $shortUrl->getShortCode()];
             }
 
             if (!$shortUrl) {
@@ -45,10 +43,8 @@ class ShortLinkService extends BaseService
 
                 $this->bus->dispatch(new GenerateShortLinkMessage($shortUrl->getId()));
             }
-            $a = new CreateShortLinkResponse(StatusType::GENERATING);
-            dd($a);
-            return $a;
-            //return ['status' => StatusType::GENERATING];
+
+            return new CreateShortLinkResponse(StatusType::GENERATING);
         } finally {
             $lock->release();
         }

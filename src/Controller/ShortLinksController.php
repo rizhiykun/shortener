@@ -45,6 +45,6 @@ final class ShortLinksController extends BaseController
         CreateShortLinkRequest $request
     ): Response
     {
-        return $this->appJson($this->shortLinkService->process($request->originalUrl));
+        return $this->appJson($this->shortLinkService->process($request->original_url));
     }
 }
