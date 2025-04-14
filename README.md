@@ -1,5 +1,17 @@
 # Short links service
 
+✅ Generate short links with random codes (4–8 alphanumeric characters)
+
+🔄 Asynchronous short link generation via Symfony Messenger
+
+🔐 Locking mechanism using Symfony's Lock component
+
+🧩 Modular architecture using Factories, DTOs, Enums, and Services
+
+🧪 Tested with PHPUnit (unit and integration tests)
+
+📖 OpenAPI documentation via NelmioApiDocBundle
+
 ## Environment variables
 You can set the following environment variables from environment:
 
@@ -37,3 +49,13 @@ make sure that 'make' is installed on your system
 make build
 ```
 
+For consuming messages from RMQ
+```bash
+make consume
+```
+
+## Documentation
+
+available after build
+
+http://symfony.local/api/doc

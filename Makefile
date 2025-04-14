@@ -20,3 +20,7 @@ build:
 	@docker exec $(APP) git config --global --add safe.directory /var/www
 	@docker exec $(APP) composer install
 	@docker exec $(APP) bin/console doctrine:migrations:migrate --no-interaction
+
+
+consume:
+	@docker exec $(APP) bin/console messenger:consume async
