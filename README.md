@@ -8,7 +8,7 @@
 
 🧩 Modular architecture using Factories, DTOs, Enums, and Services
 
-🧪 Tested with PHPUnit (unit and integration tests)
+🧪 Tested with PHPUnit
 
 📖 OpenAPI documentation via NelmioApiDocBundle
 
